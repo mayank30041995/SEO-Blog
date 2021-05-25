@@ -33,7 +33,7 @@ const SigninComponent = () => {
    
     const handleChange = name => e => {
         // console.log(e.target.value)
-        setValues({...values, error: false, [name]: e.target.values})
+        setValues({...values, error: false, [name]: e.target.value})
     };
 
     const showLoading = () => (loading ? <div className="alert alert-info">Loading...</div> : '');
